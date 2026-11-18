@@ -47,7 +47,7 @@ This is a team project.
 
 ## Contributing
 
-1. Clone the repo: `git clone https://github.com/akshatkumar0067-coder/disaster-relief-dashboard.git`
+1. Clone the repo: `git clone https://github.com/akshatkumar0067/disaster-relief-dashboard.git`
 2. Create your own branch: `git checkout -b your-name-feature`
 3. Make changes, then: `git add .` and `git commit -m "describe your change"`
 4. Push your branch: `git push -u origin your-name-feature`
