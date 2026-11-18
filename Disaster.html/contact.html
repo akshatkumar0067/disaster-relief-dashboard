@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ReliefConnect disaster relief coordination and transparency platform">
+  <title>Contact | ReliefConnect</title>
+  <link rel="stylesheet" href="assesment2.css">
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">✚</span>
+        <span>ReliefConnect</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰ Menu</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="donate.html" data-nav="donate">Donate</a>
+        <a href="camps.html" data-nav="camps">Relief Camps</a>
+        <a href="volunteers.html" data-nav="volunteers">Volunteers</a>
+        <a href="resources.html" data-nav="resources">Resources</a>
+        <a href="transparency.html" data-nav="transparency">Transparency</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="page-heading">
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h1>Contact ReliefConnect</h1>
+        <p>Send a message through this demonstration contact form.</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Contact information</h3>
+          <p class="muted">This is a student project prototype. The following contact details are placeholders.</p>
+          <ul class="list-clean">
+            <li><strong>✉ Email</strong><p class="muted">support@example.org</p></li>
+            <li><strong>☎ Phone</strong><p class="muted">+91 9279121301</p></li>
+            <li><strong>⌖ Office</strong><p class="muted">Sample address · Replace with verified details</p></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Send a message</h3>
+          <form id="contact-form" class="form-grid">
+            <div class="field"><label>Name *</label><input name="name" required></div>
+            <div class="field"><label>Email *</label><input name="email" type="email" required></div>
+            <div class="field full"><label>Subject</label><input name="subject"></div>
+            <div class="field full"><label>Message *</label><textarea name="message" required></textarea></div>
+            <div class="field full"><button class="btn btn-primary" type="submit">Send demo message</button></div>
+          </form>
+          <p class="muted" style="font-size:.82rem">Messages are stored locally in this browser only. No email is sent.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>✚ ReliefConnect</strong>
+        <p>Coordinating support, resources and relief information.</p>
+        <p>© 2026 ReliefConnect · Academic demonstration project</p>
+      </div>
+      <div class="footer-links">
+        <a href="donate.html">Donate</a>
+        <a href="volunteers.html">Volunteer</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assesment2.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",()=>{document.querySelector(`[data-nav="contact"]`)?.classList.add("active")})</script>
+</body>
+</html>

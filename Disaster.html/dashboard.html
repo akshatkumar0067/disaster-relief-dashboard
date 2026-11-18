@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ReliefConnect disaster relief coordination and transparency platform">
+  <title>Dashboard | ReliefConnect</title>
+  <link rel="stylesheet" href="assesment2.css">
+</head>
+<body data-page="dashboard">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">✚</span>
+        <span>ReliefConnect</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰ Menu</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="donate.html" data-nav="donate">Donate</a>
+        <a href="camps.html" data-nav="camps">Relief Camps</a>
+        <a href="volunteers.html" data-nav="volunteers">Volunteers</a>
+        <a href="resources.html" data-nav="resources">Resources</a>
+        <a href="transparency.html" data-nav="transparency">Transparency</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="page-heading">
+        <span class="eyebrow">OVERVIEW</span>
+        <h1>Project Dashboard</h1>
+        <p>A quick overview of campaign activity and locally saved demo submissions.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card stat-card">
+          <div class="stat-icon">＄</div>
+          <div>
+            <div class="stat-value" data-raised>$85,000</div>
+            <div class="stat-label">Campaign total*</div>
+          </div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-icon">♡</div>
+          <div>
+            <div class="stat-value" data-total-donations>$0</div>
+            <div class="stat-label">Demo donations recorded</div>
+          </div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-icon">♙</div>
+          <div>
+            <div class="stat-value" data-volunteer-count>0</div>
+            <div class="stat-label">Volunteer registrations</div>
+          </div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-icon">▤</div>
+          <div>
+            <div class="stat-value" data-donation-count>0</div>
+            <div class="stat-label">Donation entries</div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-2" style="margin-top:20px">
+        <div class="card">
+          <h3>Illustrative weekly activity</h3>
+          <p class="muted">Sample visualization for interface demonstration, not audited transaction data.</p>
+          <div id="donation-chart" class="chart-bars"></div>
+        </div>
+        <div class="card">
+          <h3>Campaign allocation snapshot</h3>
+          <p class="muted">Illustrative allocation from the original project.</p>
+          <ul class="list-clean">
+            <li class="row-between"><span>Thermal blankets</span><strong>$20,000</strong></li>
+            <li class="row-between"><span>Water filtration kits</span><strong>$25,000</strong></li>
+            <li class="row-between"><span>Dry ration packs</span><strong>$15,000</strong></li>
+            <li class="row-between"><span>Medical kits</span><strong>$25,000</strong></li>
+          </ul>
+          <a href="transparency.html" class="btn btn-outline">Full transparency report</a>
+        </div>
+      </div>
+      <div class="card" style="margin-top:20px">
+        <h3>Recent demo donations</h3>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Supporter</th>
+                <th>Date</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody id="dashboard-donations"></tbody>
+          </table>
+        </div>
+      </div>
+      <p class="muted" style="font-size:.82rem;margin-top:15px">*The $85,000 campaign baseline and impact metrics are illustrative figures carried over from the original prototype. User-entered demo donations are stored only in this browser.</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>✚ ReliefConnect</strong>
+        <p>Coordinating support, resources and relief information.</p>
+        <p>© 2026 ReliefConnect · Academic demonstration project</p>
+      </div>
+      <div class="footer-links">
+        <a href="donate.html">Donate</a>
+        <a href="volunteers.html">Volunteer</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assesment2.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",()=>{document.querySelector(`[data-nav="dashboard"]`)?.classList.add("active")})</script>
+</body>
+</html>

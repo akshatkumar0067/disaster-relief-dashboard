@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ReliefConnect disaster relief coordination and transparency platform">
+  <title>Relief Camps | ReliefConnect</title>
+  <link rel="stylesheet" href="assesment2.css">
+</head>
+<body data-page="camps">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">✚</span>
+        <span>ReliefConnect</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰ Menu</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="donate.html" data-nav="donate">Donate</a>
+        <a href="camps.html" data-nav="camps">Relief Camps</a>
+        <a href="volunteers.html" data-nav="volunteers">Volunteers</a>
+        <a href="resources.html" data-nav="resources">Resources</a>
+        <a href="transparency.html" data-nav="transparency">Transparency</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="page-heading">
+        <span class="eyebrow">FIELD INFORMATION</span>
+        <h1>Relief camps</h1>
+        <p>Sample camp directory showing how locations and services can be organized.</p>
+      </div>
+      <div class="notice">The camp entries below are fictional sample records for the academic project. They are not verified emergency locations.</div>
+      <div class="grid grid-3" style="margin-top:20px">
+        <div class="card camp-card">
+          <div class="camp-top">
+            <span class="badge">Open · Sample</span>
+            <span class="muted">RC-001</span>
+          </div>
+          <h3>Community Relief Centre</h3>
+          <p class="muted">North District · Sample location</p>
+          <div class="camp-meta">
+            <span>♙ Capacity: 500</span>
+            <span>◉ Occupancy: 320</span>
+          </div>
+          <p><strong>Services</strong></p>
+          <p class="muted">Temporary shelter · Meals · First aid</p>
+          <div class="progress"><span style="width:64%"></span></div>
+        </div>
+        <div class="card camp-card">
+          <div class="camp-top">
+            <span class="badge warn">Limited capacity</span>
+            <span class="muted">RC-002</span>
+          </div>
+          <h3>Riverside Support Hub</h3>
+          <p class="muted">East District · Sample location</p>
+          <div class="camp-meta">
+            <span>♙ Capacity: 300</span>
+            <span>◉ Occupancy: 270</span>
+          </div>
+          <p><strong>Services</strong></p>
+          <p class="muted">Water · Dry ration · Charging point</p>
+          <div class="progress"><span style="width:90%"></span></div>
+        </div>
+        <div class="card camp-card">
+          <div class="camp-top">
+            <span class="badge">Open · Sample</span>
+            <span class="muted">RC-003</span>
+          </div>
+          <h3>School Assistance Centre</h3>
+          <p class="muted">West District · Sample location</p>
+          <div class="camp-meta">
+            <span>♙ Capacity: 250</span>
+            <span>◉ Occupancy: 140</span>
+          </div>
+          <p><strong>Services</strong></p>
+          <p class="muted">Family support · Hygiene kits · Information desk</p>
+          <div class="progress"><span style="width:56%"></span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>✚ ReliefConnect</strong>
+        <p>Coordinating support, resources and relief information.</p>
+        <p>© 2026 ReliefConnect · Academic demonstration project</p>
+      </div>
+      <div class="footer-links">
+        <a href="donate.html">Donate</a>
+        <a href="volunteers.html">Volunteer</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assesment2.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",()=>{document.querySelector(`[data-nav="camps"]`)?.classList.add("active")})</script>
+</body>
+</html>

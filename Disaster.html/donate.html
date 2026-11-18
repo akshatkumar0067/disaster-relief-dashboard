@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ReliefConnect disaster relief coordination and transparency platform">
+  <title>Donate | ReliefConnect</title>
+  <link rel="stylesheet" href="assesment2.css">
+</head>
+<body data-page="donate">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">✚</span>
+        <span>ReliefConnect</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰ Menu</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="donate.html" data-nav="donate">Donate</a>
+        <a href="camps.html" data-nav="camps">Relief Camps</a>
+        <a href="volunteers.html" data-nav="volunteers">Volunteers</a>
+        <a href="resources.html" data-nav="resources">Resources</a>
+        <a href="transparency.html" data-nav="transparency">Transparency</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="page-heading">
+        <span class="eyebrow">MAKE AN IMPACT</span>
+        <h1>Support the relief campaign</h1>
+        <p>Choose an amount and add your name if you would like to be acknowledged.</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Global Earthquake Relief Fund</h3>
+          <span class="badge red">Campaign demonstration</span>
+          <p class="muted" style="margin:14px 0">Your support represents assistance for shelter, food, clean water and medical supplies.</p>
+          <div class="row-between">
+            <strong data-raised>$85,000 raised</strong>
+            <span class="muted">Goal $100,000</span>
+          </div>
+          <div class="progress" style="margin:10px 0"><span data-progress style="width:85%"></span></div>
+          <p class="muted">This is an academic front-end demo. No payment is collected or processed.</p>
+        </div>
+        <div class="card">
+          <h3>Donation form</h3>
+          <p class="muted">Select a preset or enter a custom amount.</p>
+          <form id="donation-form">
+            <div class="preset-amounts">
+              <button type="button" class="preset-btn" data-amount="25">$25</button>
+              <button type="button" class="preset-btn" data-amount="50">$50</button>
+              <button type="button" class="preset-btn" data-amount="100">$100</button>
+            </div>
+            <div class="field">
+              <label for="custom-amount">Custom amount (USD)</label>
+              <input id="custom-amount" type="number" min="1" step="0.01" placeholder="Enter amount">
+            </div>
+            <div class="field" style="margin-top:14px">
+              <label for="donor-name">Your name (optional)</label>
+              <input id="donor-name" name="donor" maxlength="40" placeholder="Anonymous">
+            </div>
+            <button class="btn btn-primary" style="width:100%;margin-top:18px" type="submit">Record demo donation</button>
+          </form>
+          <p class="notice" style="margin-top:15px">Demo only: this form records a local sample entry. It does not charge a card or transfer money.</p>
+        </div>
+      </div>
+      <div class="grid grid-2" style="margin-top:20px">
+        <div class="card">
+          <h3>Recent supporters</h3>
+          <div id="supporter-list" class="grid" style="gap:9px">
+            <span class="muted">No demo donations recorded yet.</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Donation history</h3>
+          <p id="history-empty" class="muted">No demo donations yet. Be the first to contribute.</p>
+          <ul id="history-list" class="list-clean"></ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>✚ ReliefConnect</strong>
+        <p>Coordinating support, resources and relief information.</p>
+        <p>© 2026 ReliefConnect · Academic demonstration project</p>
+      </div>
+      <div class="footer-links">
+        <a href="donate.html">Donate</a>
+        <a href="volunteers.html">Volunteer</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div id="success-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <div class="check">✓</div>
+      <h2 id="modal-title">Thank you for your support!</h2>
+      <p>Your demo contribution of <strong id="modal-amount"></strong> has been recorded locally for this demonstration.</p>
+      <p class="muted">Supporter: <strong id="modal-donor"></strong></p>
+      <button id="close-modal-btn" class="btn btn-primary">Close</button>
+    </div>
+  </div>
+  <script src="assesment2.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",()=>{document.querySelector(`[data-nav="donate"]`)?.classList.add("active")})</script>
+</body>
+</html>
