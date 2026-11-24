@@ -42,7 +42,7 @@ This is a team project.
 | Name | Role | GitHub |
 |------|------|--------|
 | Akshat Kumar | Team Leader | [@akshatkumar0067](https://github.com/akshatkumar0067) |
-| Sadhwey | Website Designer | [@sadhwey1122020](https://github.com/sadhwey1122020) |
+| Sadhwey | Website Designer | [@sadhwey1122020](https://github.com/sadhwey) |
 | Poorva Sharma | Presentation Manager | [@poorvasharma08](https://github.com/poorvasharma08) |
 
 ## Contributing
